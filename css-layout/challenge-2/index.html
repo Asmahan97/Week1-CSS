@@ -18,22 +18,22 @@
         font-family: system-ui, sans-serif;
         padding: 1.5rem;
       }
-      .stack-lg {
+      .stack-lg > * + * {
         margin-top: 2rem;
       }
       .stack-md > * + * {
         margin-top: 1rem;
       }
-      .stack-sm {
+      .stack-sm > * + * {
         margin-top: 0.5rem;
       }
     </style>
   </head>
   <body>
-    <main>
+    <main class="stack-lg">
       <h1>Welcome to my site</h1>
 
-      <section class="stack-lg">
+      <section>
         <div class="stack-md">
         <h2>The first section</h2>
         <p>
@@ -45,21 +45,21 @@
       </div>
       </section>
 
-      <section class="stack-lg">
+      <section>
         <div class="stack-md">
         <h2>Contact me</h2>
-        <form>
-          <div>
+        <form class="stack-sm">
+          <div class="stack-sm">
             <label for="name">Name</label>
             <input type="text" id="name" />
           </div>
 
-          <div>
+          <div class="stack-sm">
             <label for="name">Email</label>
             <input type="email" id="email" />
           </div>
 
-          <div>
+          <div class="stack-sm">
             <label for="message">Message</label>
             <textarea id="message"></textarea>
           </div>
