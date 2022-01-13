@@ -29,10 +29,24 @@
       main {
         padding: 1.5rem;
       }
+      .width-lg {
+        max-width: 60rem;
+      }
+      .width-md {
+        max-width: 40rem;
+      }
+      .width-sm {
+        max-width: 20rem;
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
   </head>
   <body>
     <header>
+      <div class="width-lg center">
       <h1>Welcome to my site</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
@@ -40,9 +54,11 @@
         cupiditate provident nemo quo placeat incidunt commodi ea aperiam
         voluptatum corporis soluta impedit eaque.
       </p>
+    </div>
     </header>
     <main>
       <section>
+        <div class="width-md center">
         <h2>The first section</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
@@ -50,9 +66,10 @@
           cupiditate provident nemo quo placeat incidunt commodi ea aperiam
           voluptatum corporis soluta impedit eaque.
         </p>
+      </div>
       </section>
 
-      <section>
+      <section class="width-sm center">
         <h2>Contact me</h2>
         <form>
           <div>
